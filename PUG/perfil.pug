@@ -1,0 +1,63 @@
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Perfil
+        link(rel="stylesheet", href="../css/estilos.css")
+        link(rel="stylesheet", href="../css/estilos_perfil.css")
+    body
+        header.header
+            span.header__button
+                img.Btn_Menu(src="../IMG/menu.svg", alt="")
+            img.header__image(src="../IMG/Logo transparente.png", alt="")
+            .header__links
+                a(href="login.html") Ir a la página principal
+        .hero
+        main.main
+            section.photoMenu
+                .photo
+                    img(src="../IMG/profile.jpg", alt="")
+                .menu
+                    a(href="") Información personal
+                    a(href="") Tramites pendientes
+                    a(href="settings.html") Configuración
+            section.info
+                h2.info__title Información personal
+                .info__box
+                    h4.label Nombre Completo:
+                    h4.input Laura Monsalve Henao
+                .info__box
+                    h4.label Tipo documento:
+                    h4.input Cc.
+                .info__box
+                    h4.label Número documento:
+                    h4.input 1001033913
+                .info__box
+                    h4.label Fecha de nacimiento:
+                    h4.input 23/10/2001
+                .info__box
+                    h4.label Departamento de nacimiento:
+                    h4.input Antioquia
+                .info__box
+                    h4.label Municipio de nacimiento:
+                    h4.input Medayork
+                .info__box
+                    h4.label Departamento de residencia:
+                    h4.input Antioquia
+                .info__box
+                    h4.label Municipio de residencia:
+                    h4.input Medellín
+                .info__box
+                    h4.label Notaria en que registra:
+                    h4.input 22
+                .info__box
+                    h4.label Dirección:
+                    h4.input Guarne zango
+                .info__box
+                    h4.label Número de teléfono:
+                    h4.input 3455454
+                .info__box
+                    h4.label Número de celular:
+                    h4.input 3198277839
+
+        include footer.pug
