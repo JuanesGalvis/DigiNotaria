@@ -1,0 +1,47 @@
+$Color-azul: #121b26;
+$Color-azul-claro: #273240;
+$Color-gris-oscuro: #73716e;
+$Color-gris: #a69f97;
+$Color-gris-claro: #d9d6d2;
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html{
+    position: relative;
+}
+
+h1{
+    font-size: 4.5em;
+}
+
+h2{
+    font-size: 3.5em;
+}
+
+h3{
+    font-size: 2.8em;
+}
+
+h4{
+    font-size: 1.6em;
+}
+
+h5{
+    font-size: 1.4em;    
+}
+
+h6{
+    font-size: 1.2em;
+}
+
+p{
+    font-size: 1.6em;
+}
+
+a{
+    font-size: 1.2em;
+}

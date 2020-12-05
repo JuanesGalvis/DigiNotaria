@@ -1,0 +1,33 @@
+@import "globales.scss";
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    background-color: $Color-azul;
+    border-bottom: 1px solid $Color-gris;
+    &__button{
+        position: absolute;
+        bottom: 10;
+        left: 10;
+    }
+    &__image{
+        width: 25em;
+        height: auto;
+    }
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12em;
+    bottom: 0;
+    height: 10vh;
+    color: $Color-gris;
+    background-color: $Color-azul-claro;
+    border-top: 1px solid $Color-gris;
+    font-size: 1.3em;
+}
