@@ -1,0 +1,26 @@
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Login
+        link(rel="stylesheet", href="../css/estilos.css")
+        link(rel="stylesheet", href="../css/estilos_login.css")
+
+    body
+        main.main
+            h3.main__title Inicia Sesión
+            form.login
+                label(for="").login__label Correo
+                input(type="text").login__input
+                label(for="").login__label Contraseña
+                input(type="password").login__input
+                a.login__link ¿Olvidaste tu contraseña?
+                p ¿No tienes cuenta? 
+                    a(href="registro.html").login__link Regístrate
+                p o 
+                    a.login__link ingresa como invitado
+                .login__buttons
+                    button Aceptar
+                    button Atrás
+                
+        include footer.pug

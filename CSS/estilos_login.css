@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  position: relative;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+/*
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*/
+.main {
+  box-sizing: border-box;
+  height: 90vh;
+  padding-top: 2.5em;
+  background-color: #121b26;
+}
+.main__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+  height: 2em;
+  margin: 0 auto 1em;
+  color: #121b26;
+  background-color: #73716e;
+  border: 1px solid #a69f97;
+  font-weight: 200;
+}
+.main .login {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 35em;
+  margin: 0 auto;
+  color: #73716e;
+}
+.main .login__input {
+  height: 2.8em;
+  margin-bottom: 1.5em;
+  color: #a69f97;
+  font-size: 1em;
+  border: 2px solid #73716e;
+  background-color: #273240;
+}
+.main .login__label {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+.main .login__link {
+  text-decoration: underline;
+}
+.main .login__link:nth-of-type(1) {
+  align-self: flex-end;
+  margin-bottom: 2em;
+}
+.main .login p {
+  align-self: center;
+  font-size: 1.3em;
+}
+.main .login p a {
+  font-size: 1em;
+}
+.main .login__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em auto 2em;
+  width: 20em;
+}
+.main .login__buttons button {
+  height: 2.5em;
+  width: 8em;
+  background-color: #273240;
+  color: #73716e;
+  font-size: 1em;
+  font-weight: 500;
+  border: 2px solid #73716e;
+}
