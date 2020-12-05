@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  position: relative;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 2.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+/*
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*/
+#Oculto {
+  display: none;
+}
+
+section.Menu {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121b26;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+section.Menu nav {
+  padding: 20px;
+  border: 3px solid #a69f97;
+  width: 250px;
+}
+section.Menu nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+section.Menu nav ul li {
+  background-color: #a69f97;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+section.Menu button.Regresar, section.Menu button.OcultarMenu {
+  background: #273240 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  text-align: center;
+  color: #a69f97;
+  width: 150;
+  height: 33px;
+  font-size: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

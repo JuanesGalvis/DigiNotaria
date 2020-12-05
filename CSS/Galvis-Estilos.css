@@ -46,7 +46,7 @@ a {
 body {
   background-color: #121b26;
   color: #a69f97;
-  font-family: normal normal normal normal Cambria Math;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 body main.P3 {
   margin-left: 10px;
@@ -182,4 +182,57 @@ body h4.Messange {
   margin: 10px auto;
   font-size: 30px;
   padding: 10px;
+}
+body main.BienvenidaFondo {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://farm7.staticflickr.com/6035/6254034491_4ae9fbb253_b.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .BienvenidaOpacidad {
+  background-color: rgba(18, 27, 38, 0.8);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body .BienvenidaContenido {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+body .BienvenidaContenido img {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 550px;
+}
+body .BienvenidaContenido h1, body .BienvenidaContenido h2 {
+  width: 90%;
+  margin: 0px auto 30px auto;
+  text-align: center;
+  font-size: 35px;
+}
+body .BienvenidaContenido button.Ingresar {
+  background: #273240 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  text-align: center;
+  color: #a69f97;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 33px;
+  padding: 30px 50px;
+  font-size: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
