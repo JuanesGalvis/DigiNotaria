@@ -1,0 +1,123 @@
+@import "globales.scss";
+
+
+.header{
+    
+    &__links{
+        position: absolute;
+        right: 10;
+        bottom: 0;
+        display: flex;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: .5em ;
+            width: 8em;
+            height: 2em;
+            border-left: 2px solid $Color-gris-oscuro ;
+            border-top: 2px solid $Color-gris-oscuro ;
+            border-right: 2px solid $Color-gris-oscuro ;
+            color: $Color-gris-oscuro;
+            text-decoration: none;
+        }
+    }
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 5.5em;
+    background-color: $Color-azul;
+    color: $Color-gris-oscuro;
+    text-align: center;
+    *{
+        font-weight: 300;
+    }
+    &__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+        width: 10em;
+        height: 1.5em;
+        background-color: $Color-gris-oscuro;
+        color: $Color-azul;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        width: 13em;
+        height: 2em;
+        color: $Color-gris-oscuro;
+        background-color: $Color-azul-claro;
+        border: 1px solid $Color-gris-oscuro;
+        font-size: 2em;
+        text-decoration: none;
+    }
+    &__infoNotaria{
+        display: grid;
+        grid-template-areas:'fotoNotaria . .'
+                            'img1 text img2' ;
+        row-gap: 2.2em;
+        column-gap: 2em;
+        justify-items: center ;
+        align-items: center;
+        margin-bottom: 6em;
+        width: 75em;
+        h3{
+            grid-area: fotoNotaria;
+        }
+        img{
+            width: 20em;
+        }
+
+        img:nth-of-type(1){
+            grid-area: img1;
+        }
+        &__description{
+            grid-area: text;
+        }
+        img:nth-of-type(2){
+            grid-area: img2;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 45em;
+        padding: 2em;
+        background-color: $Color-gris-oscuro;
+        h5{
+            color: $Color-azul-claro;
+            margin-bottom: 1.5em;
+        }
+        input{
+            margin-bottom: 1em;
+            width: 100%;
+            height: 2em;
+            background-color: $Color-azul-claro;
+            border: 2px solid $Color-gris;
+            font-size: 1.3em;
+            padding-left: .5em;
+        }
+        input:nth-of-type(3){
+            height: 7em;
+        }
+        input::placeholder{
+            color: $Color-gris;
+        }
+        button{
+            width: 10em;
+            height: 2em;
+            font-size: 1.5em;
+            background-color: $Color-azul-claro;
+            border: 2px solid $Color-gris;
+            color: $Color-gris;
+        }
+    }
+}

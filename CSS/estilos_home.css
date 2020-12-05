@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  position: relative;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+/*
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*/
+.header__links {
+  position: absolute;
+  right: 10;
+  bottom: 0;
+  display: flex;
+}
+.header__links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5em;
+  width: 8em;
+  height: 2em;
+  border-left: 2px solid #73716e;
+  border-top: 2px solid #73716e;
+  border-right: 2px solid #73716e;
+  color: #73716e;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 5.5em;
+  background-color: #121b26;
+  color: #73716e;
+  text-align: center;
+}
+.main * {
+  font-weight: 300;
+}
+.main__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  width: 10em;
+  height: 1.5em;
+  background-color: #73716e;
+  color: #121b26;
+}
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  width: 13em;
+  height: 2em;
+  color: #73716e;
+  background-color: #273240;
+  border: 1px solid #73716e;
+  font-size: 2em;
+  text-decoration: none;
+}
+.main__infoNotaria {
+  display: grid;
+  grid-template-areas: "fotoNotaria . ." "img1 text img2";
+  row-gap: 2.2em;
+  column-gap: 2em;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 6em;
+  width: 75em;
+}
+.main__infoNotaria h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: fotoNotaria;
+}
+.main__infoNotaria img {
+  width: 20em;
+}
+.main__infoNotaria img:nth-of-type(1) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img1;
+}
+.main__infoNotaria__description {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: text;
+}
+.main__infoNotaria img:nth-of-type(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: img2;
+}
+.main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 45em;
+  padding: 2em;
+  background-color: #73716e;
+}
+.main__form h5 {
+  color: #273240;
+  margin-bottom: 1.5em;
+}
+.main__form input {
+  margin-bottom: 1em;
+  width: 100%;
+  height: 2em;
+  background-color: #273240;
+  border: 2px solid #a69f97;
+  font-size: 1.3em;
+  padding-left: 0.5em;
+}
+.main__form input:nth-of-type(3) {
+  height: 7em;
+}
+.main__form input::placeholder {
+  color: #a69f97;
+}
+.main__form button {
+  width: 10em;
+  height: 2em;
+  font-size: 1.5em;
+  background-color: #273240;
+  border: 2px solid #a69f97;
+  color: #a69f97;
+}

@@ -2,20 +2,26 @@ html
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Home
+        title Home invitado
         link(rel="stylesheet", href="../css/estilos.css")
         link(rel="stylesheet", href="../css/estilos_home.css")
     body
-        include header.pug
+        header.header
+            span.header__button
+                img.Btn_Menu(src="../IMG/menu.svg", alt="")
+            img.header__image(src="../IMG/Logo transparente.png", alt="")
+            .header__links
+                a(href="login.html") Iniciar sesión
+                a(href="registro.html") Registrate
         main.main
             h2.main__title Notaria ##
             h4 Estamos en un proceso de digitalización y automatización de las notarias de Colombia... estamos cada vez mas cerca de ti y desde la comodidad de tu hogar.
             a(href="").main__button Cómo usar el aplicativo Web
             .main__infoNotaria
                 h3 Foto notaria
-                img(src="../IMG/fachada.png", alt="")
+                img(src="../IMG/empty.png", alt="")
                 .main__infoNotaria__description
-                    h4 DIRECCIÓN <br> Centro comercial Monterrey <br> Carrera 48 (Av Las Vegas) No. 10-107 - El Poblado <br> Medellín - Antioquia - Colombia
+                    h4 DIRECCIÓN <br><br> Calle 30A #25-56 <br> Medellín, Poblado
                 img(src="../IMG/mapa.PNG", alt="")
             form(action="").main__form
                 h5 ESCRIBENOS UN BREVE MENSAJE CON TUS QUEJAS, DUDAS, RECLAMOS O FELICITACIONES
