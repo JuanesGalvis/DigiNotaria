@@ -3,6 +3,9 @@ $Color-azul-claro: #273240;
 $Color-gris-oscuro: #73716e;
 $Color-gris: #a69f97;
 $Color-gris-claro: #d9d6d2;
+$Negro: #000000;
+
+$fuente: normal normal normal normal Cambria Math;
 
 *{
     margin: 0;
@@ -44,4 +47,10 @@ p{
 
 a{
     font-size: 1.2em;
+    
 }
+
+// Fuente: Cambria Math
+/*
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*/
