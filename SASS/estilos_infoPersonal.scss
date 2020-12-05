@@ -1,0 +1,41 @@
+@import "globales.scss";
+
+.main{
+    section{
+        h5{
+            display: inline;
+        }
+        h4{
+            margin-bottom: .5em;
+            font-weight: 300;
+        }
+        .blanco{
+            color: $Color-gris;
+        }
+        a{
+            display: inline;
+            font-size: 1.2em;
+        }
+        .celular{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 30em;
+            margin-bottom: 1em;
+            *{
+                margin: 0;
+            }
+            
+        }
+    }
+    .section2{
+        h4{
+            margin-bottom: 1.5em;
+        }
+    }
+    .section3{
+        a{
+            display: block;
+        }
+    }
+}

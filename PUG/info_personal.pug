@@ -1,0 +1,45 @@
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Información personal  
+        link(rel="stylesheet", href="../css/estilos.css")
+        link(rel="stylesheet", href="../css/estilos_settings.css")
+        link(rel="stylesheet", href="../css/estilos_infoPersonal.css")
+    body
+        include header.pug
+        main.main
+            section.section1
+                h3 Información personal
+                br
+                h4 General
+                br
+                h4 Nombre
+                h5.blanco Laura Monsalve Henao      
+                    a cambiar
+            section.section2
+                h3 Información de contacto
+                br
+                h4 Maneja tu información de contacto
+                .celular
+                    h4 Celular
+                    h4.blanco 3104052415
+                    a(href="") Cambiar
+                .celular
+                    h4 Teléfono
+                    h4.blanco 3452123
+                    a(href="") Cambiar
+                a(href="") Agrega un número telefónico
+
+            section.section3
+                h3 Forma de pago
+                br
+                h4 Métodos de pago
+                a(href="") Agregar tarjeta de crédito o débito 
+                br
+                br
+                h4 Historia de pagos
+                h4 -----------------
+            a(href="").main__button Atrás
+
+        include footer.pug

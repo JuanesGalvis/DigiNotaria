@@ -1,0 +1,32 @@
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Seguridad
+        link(rel="stylesheet", href="../css/estilos.css")
+        link(rel="stylesheet", href="../css/estilos_security.css")
+    body
+        include header.pug
+        main.main
+            h4 Seguridad y acceso
+            br
+            br
+            h4 Acceso   
+            br
+            br
+            h5 Cambia la contraseña
+            br
+            form(action="").form
+                .form__box
+                    .form__box__field
+                        label Contraseña Actual
+                        input(type="text") 
+                    .form__box__field
+                        label Nueva contraseña
+                        input(type="text") 
+                    .form__box__field
+                        label Re-escribe la nueva contraseña
+                        input(type="text") 
+                button.form__button Continuar
+            a(href="").main__button Atrás
+        include footer.pug

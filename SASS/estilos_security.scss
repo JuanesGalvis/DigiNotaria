@@ -1,0 +1,59 @@
+@import "globales.scss";
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+    background-color: $Color-azul;
+    color: $Color-gris-oscuro;
+    h4,h5{
+        font-weight: 300;
+    }
+    .form{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 45em;
+        margin-bottom: 4em;
+        &__box{
+            width: 30em;
+            &__field{
+                display: flex;
+                justify-content: space-between;
+                margin-top: .5em;
+                label{
+                    font-size: 1.2em;
+                }
+                input{
+                    width: 15em;
+                    height: 2.5em;
+                    background-color: $Color-gris;
+                    border: 2px solid $Color-gris-oscuro;
+                }
+            }
+        }
+        &__button{
+            width: 10em;
+            height: 3em;
+            color: $Color-gris;
+            border: 2px solid $Color-gris-oscuro;
+            background-color: $Color-azul-claro;
+            font-size: 1em;
+            font-weight: 500;
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 7em;
+        height: 2em;
+        color: $Color-gris;
+        background-color: $Color-azul-claro;
+        border: 2px solid $Color-gris-oscuro;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+}
