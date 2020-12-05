@@ -236,3 +236,54 @@ body .BienvenidaContenido button.Ingresar {
   justify-content: center;
   align-items: center;
 }
+body section.MenuServicios {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121b26;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+body section.MenuServicios nav {
+  padding: 20px;
+  border: 3px solid #a69f97;
+  width: 250px;
+}
+body section.MenuServicios nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+body section.MenuServicios nav ul li {
+  text-align: left;
+  margin: 10px 0px 10px 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body section.MenuServicios nav ul li a {
+  color: #a69f97;
+}
+body section.MenuServicios button.Regresar {
+  background: #273240 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  text-align: center;
+  color: #a69f97;
+  width: 150;
+  height: 33px;
+  font-size: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
