@@ -522,3 +522,30 @@ body {
         }
     }
 }
+
+.Error {
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(227,34,34,1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(227,34,34,1);
+    box-shadow: 0px 0px 24px 0px rgba(227,34,34,1);
+}
+
+section.ModalPagoExitoso {
+    padding: 10px;
+    background: #61b15a;
+    border: 1px solid #273240;
+    text-align: center;
+    color: #273240;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.Oculto {
+    display: none;
+}
