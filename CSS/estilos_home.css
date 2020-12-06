@@ -43,6 +43,14 @@ a {
 /*
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 */
+.welcome {
+  position: absolute;
+  top: 10;
+  right: 10;
+  font-size: 1.5em;
+  color: #73716e;
+}
+
 .header__links {
   position: absolute;
   right: 10;
@@ -54,7 +62,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-left: 0.5em;
-  width: 8em;
+  width: 10em;
   height: 2em;
   border-left: 2px solid #73716e;
   border-top: 2px solid #73716e;

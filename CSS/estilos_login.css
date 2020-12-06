@@ -99,14 +99,17 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 3em auto 2em;
-  width: 20em;
+  width: 30em;
 }
-.main .login__buttons button {
-  height: 2.5em;
-  width: 8em;
+.main .login__buttons .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 7em;
   background-color: #273240;
   color: #73716e;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 500;
   border: 2px solid #73716e;
 }

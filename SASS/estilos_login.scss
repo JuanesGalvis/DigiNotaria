@@ -56,13 +56,16 @@
             display: flex;
             justify-content: space-between;
             margin: 3em auto 2em;
-            width: 20em;
-            button{
-                height: 2.5em;
-                width: 8em;
+            width: 30em;
+            .button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 2em;
+                width: 7em;
                 background-color: $Color-azul-claro;
                 color: $Color-gris-oscuro;
-                font-size: 1em;
+                font-size: 1.5em;
                 font-weight: 500;
                 border: 2px solid $Color-gris-oscuro;
 
