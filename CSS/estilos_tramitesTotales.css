@@ -58,6 +58,7 @@ a {
   margin: 0 auto 2em;
   width: 10em;
   border: 1px solid #73716e;
+  text-align: center;
 }
 .main__title hr {
   border: 1px solid #73716e;
