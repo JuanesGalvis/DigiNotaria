@@ -235,6 +235,7 @@ body .BienvenidaContenido button.Ingresar {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 body section.MenuServicios {
   margin: 0 auto;
@@ -504,6 +505,19 @@ body main.Pagos form.VentanaDePago section.OtrosMedios .LogosOtrosMedios {
 body main.Pagos form.VentanaDePago section.OtrosMedios .LogosOtrosMedios img {
   width: 100px;
   border-radius: 10px;
+}
+body main.Pagos button.Regresar {
+  background: #273240 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  text-align: center;
+  color: #a69f97;
+  width: 150;
+  height: 33px;
+  font-size: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Error {
