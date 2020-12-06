@@ -9,7 +9,7 @@ html
         main.RecuperarContrasena
             h1.TituloDiferente Recuperar contraseña
             h3 Correo con el que se encuentra registrado
-            input(type="email", placeholder="Correo Electronico")
+            input(type="email", placeholder="Correo Electronico", id="inputEmail", required)
             h5 Se le enviará un enlace con el cual podrá restablecer su contraseña
 
             .botones
@@ -18,3 +18,11 @@ html
                     a(href="./login.html") Atras
 
         include footer.pug
+
+        section.ModalCodigo#Oculto
+            h1 Exito!
+            p Se te enviará un link para que reestablezcas tu contraseña
+            button.regresar 
+                a(href="./login.html") Aceptar
+
+        script(src="../JS/Recordar_Contreasena.js")

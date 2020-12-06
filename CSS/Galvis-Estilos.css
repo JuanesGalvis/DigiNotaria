@@ -415,6 +415,42 @@ body main.RecuperarContrasena .botones button.Regresar, body main.RecuperarContr
   justify-content: center;
   align-items: center;
 }
+body section#Oculto {
+  display: none;
+}
+body section.ModalCodigo {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body section.ModalCodigo button.regresar {
+  background: #273240 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  text-align: center;
+  width: 150;
+  height: 33px;
+  font-size: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.ModalCodigo button.regresar a {
+  text-decoration: none;
+  color: #a69f97;
+}
 body main.Pagos {
   width: 80%;
   margin: 0 auto;

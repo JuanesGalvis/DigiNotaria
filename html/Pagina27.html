@@ -11,7 +11,7 @@
     <main class="RecuperarContrasena">
       <h1 class="TituloDiferente">Recuperar contraseña</h1>
       <h3>Correo con el que se encuentra registrado</h3>
-      <input type="email" placeholder="Correo Electronico"/>
+      <input type="email" placeholder="Correo Electronico" id="inputEmail" required="required"/>
       <h5>Se le enviará un enlace con el cual podrá restablecer su contraseña</h5>
       <div class="botones">
         <button class="aceptar">Aceptar</button>
@@ -19,7 +19,13 @@
       </div>
     </main>
     <footer class="footer"><span class="footer__title">Diginotaria 2020</span>
-      <div class="socialMedia"><span class="socialMedia__title">Vinculos redes sociales</span></div>
+      <div class="socialMedia"><a class="icon" href="https://www.instagram.com/diginotaria.co/?hl=es-la"><img src="../IMG/instagram.svg" alt=""/></a><a class="icon" href="https://twitter.com/DigiNotaria"><img src="../IMG/gorjeo.svg" alt=""/></a><a class="icon" href="https://www.facebook.com/digi.notaria.1"><img src="../IMG/facebook.svg" alt=""/></a></div>
     </footer>
+    <section class="ModalCodigo" id="Oculto">
+      <h1>Exito!</h1>
+      <p>Se te enviará un link para que reestablezcas tu contraseña</p>
+      <button class="regresar"> <a href="./login.html">Aceptar</a></button>
+    </section>
+    <script src="../JS/Recordar_Contreasena.js"></script>
   </body>
 </html>
