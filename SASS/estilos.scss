@@ -25,11 +25,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12em;
-    bottom: 0;
+    padding: 0 10em;
     height: 10vh;
     color: $Color-gris;
     background-color: $Color-azul-claro;
     border-top: 1px solid $Color-gris;
     font-size: 1.3em;
+    .socialMedia{
+        display: flex;
+        width: 10em;
+        justify-content: space-between;
+        .icon{
+            width: 30px;
+            img{
+                width: 100%;
+            }
+        }
+
+    }
 }
