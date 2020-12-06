@@ -1,0 +1,60 @@
+@import "globales.scss";
+
+.main{
+    position: relative;
+    padding: 2.5em 2em;
+    background-color: $Color-azul;
+    color: $Color-gris-oscuro;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: .5em;
+        margin: 0 auto 2em;
+        width: 10em;
+        border: 1px solid $Color-gris-oscuro;
+        hr{
+            border: 1px solid $Color-gris-oscuro;
+            width: 60%;
+        }
+    }
+    .links{
+        display: flex;
+        margin: 3em auto;
+        width: 30em;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 8em;
+            padding: .5em 0;
+            margin: 0 auto;
+            color: $Color-gris-oscuro;
+            background-color: $Color-azul-claro;
+            border: 1px solid $Color-gris-oscuro;
+            text-decoration: none;
+
+            font-size: 1.5em;
+        }
+
+    }
+    h3,h4{
+        font-weight: 300;
+    }
+    .atention{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10em;
+        height: 2em;
+        background-color: $Color-gris-oscuro;
+        color: $Color-azul;
+        font-size: 1.5em;
+        
+    }
+
+}
