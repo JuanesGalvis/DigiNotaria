@@ -1,0 +1,15 @@
+@import "globales.scss";
+
+section.Recorrido {
+background-color: $Color-azul-claro;
+    ul {
+        display: flex;
+        margin-left: 20px;
+        li {
+            margin: 10px 20px;
+            a {
+                color: $Color-gris-claro;
+            }
+        }
+    }
+}

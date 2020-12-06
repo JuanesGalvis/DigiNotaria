@@ -5,6 +5,7 @@ html
         title Perfil
         link(rel="stylesheet", href="../css/estilos.css")
         link(rel="stylesheet", href="../css/estilos_perfil.css")
+        link(rel="stylesheet", href="../CSS/Estilos_Recorrido.css")
     body
         header.header
             span.header__button
@@ -13,6 +14,14 @@ html
             .header__links
                 a(href="login.html") Ir a la página principal
         include Menu.pug
+
+        section.Recorrido
+            ul
+                li 
+                    a(href="./home.html") Inicio
+                li
+                    a(href="./perfil.html") Perfil
+
         .hero
         main.main
             section.photoMenu

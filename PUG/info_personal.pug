@@ -6,9 +6,22 @@ html
         link(rel="stylesheet", href="../css/estilos.css")
         link(rel="stylesheet", href="../css/estilos_settings.css")
         link(rel="stylesheet", href="../css/estilos_infoPersonal.css")
+        link(rel="stylesheet", href="../CSS/Estilos_Recorrido.css")
     body
         include header.pug
         include Menu.pug
+
+        section.Recorrido
+            ul
+                li 
+                    a(href="./home.html") Inicio
+                li
+                    a(href="./perfil.html") Perfil
+                li
+                    a(href="./settings.html") Configuración 
+                li
+                    a(href="./info_personal.html") Información Personal
+
         main.main
             section.section1
                 h3 Información personal

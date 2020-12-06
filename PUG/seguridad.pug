@@ -5,9 +5,22 @@ html
         title Seguridad
         link(rel="stylesheet", href="../css/estilos.css")
         link(rel="stylesheet", href="../css/estilos_security.css")
+        link(rel="stylesheet", href="../CSS/Estilos_Recorrido.css")
     body
         include header.pug
         include Menu.pug
+
+        section.Recorrido
+            ul
+                li 
+                    a(href="./home.html") Inicio
+                li
+                    a(href="./perfil.html") Perfil
+                li
+                    a(href="./settings.html") Configuración 
+                li
+                    a(href="./seguridad.html") Seguridad y Acceso
+
         main.main
             h4 Seguridad y acceso
             br

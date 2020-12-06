@@ -5,11 +5,22 @@ html
         title Control y Propiedad de Cuenta
         link(rel="stylesheet", href="../css/estilos.css")
         link(rel="stylesheet", href="../css/Galvis-Estilos.css")
-
+        link(rel="stylesheet", href="../CSS/Estilos_Recorrido.css")
     body
         include header.pug
         include Menu.pug
         
+        section.Recorrido
+            ul
+                li 
+                    a(href="./home.html") Inicio
+                li
+                    a(href="./perfil.html") Perfil
+                li
+                    a(href="./settings.html") Configuración 
+                li
+                    a(href="./Pagina3.html") Control y Propiedad de la cuenta
+
         main.P3
             h2 Control y Propiedad de la cuenta
             section

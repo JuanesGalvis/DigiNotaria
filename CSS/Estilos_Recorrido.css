@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  position: relative;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+/*
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*/
+section.Recorrido {
+  background-color: #273240;
+}
+section.Recorrido ul {
+  display: flex;
+  margin-left: 20px;
+}
+section.Recorrido ul li {
+  margin: 10px 20px;
+}
+section.Recorrido ul li a {
+  color: #d9d6d2;
+}
