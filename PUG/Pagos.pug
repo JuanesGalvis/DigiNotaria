@@ -18,11 +18,12 @@ html
                 input(type="file", id="Archivos")
 
                 label(for="MetodoPago") Número de Tarjeta de Credito
-                input(type="number", placeholder="Ejemplo: XXXX XXXX XXXX XXXXX")
+                input(type="number", placeholder="Ejemplo: XXXXXXXXXXXXXXXXX", id="NumTarjeta")
+                span No poner "-" solo los números
                 img(src="https://mushingpirineus.com/wp-content/uploads/2018/05/tarjetas-credito-logos.png", alt="Logo de Pagos")
 
-                label(for="MetodoPago") Mes de Caducidad
-                select(name='metodo', id="MetodoPago") 
+                label(for="Mes") Mes de Caducidad
+                select(name='Mes', id="Mes") 
                     option(value='Enero') Enero
                     option(value='Febrero') Febrero
                     option(value='Marzo') Marzo
@@ -37,13 +38,13 @@ html
                     option(value='Diciembre') Diciembre
 
                 label(for="MetodoPago") Año de Caducidad
-                input(type="number", placeholder="Año")
+                input(type="number", placeholder="Año", id="Anio")
 
                 label(for="MetodoPago") Dirección
-                input(type="text", placeholder="Ejemplo: Cra 86B #56-87")
+                input(type="text", placeholder="Ejemplo: Cra 86B #56-87", id="Direccion")
 
                 label(for="MetodoPago") Código Postal
-                input(type="number", placeholder="Ejemplo: 3009")
+                input(type="number", placeholder="Ejemplo: 3009", id="CodPostal")
 
                 button.Pagar Pagar!
 
@@ -61,4 +62,9 @@ html
                         a(href="https://www.efecty.com.co/web/")
                             img(src="https://feelinglucky.co/wp-content/uploads/efecty-logo.png", alt="Efecty")
 
+
+        section.ModalPagoExitoso.Oculto
+            h1 Pago Exitoso!
+
         include footer.pug
+        script(src="../JS/pagos.js")

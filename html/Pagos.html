@@ -28,9 +28,9 @@
         <h3>Adjuntar los archivos correspondientes a su tramite</h3>
         <input type="file" id="Archivos"/>
         <label for="MetodoPago">Número de Tarjeta de Credito</label>
-        <input type="number" placeholder="Ejemplo: XXXX XXXX XXXX XXXXX"/><img src="https://mushingpirineus.com/wp-content/uploads/2018/05/tarjetas-credito-logos.png" alt="Logo de Pagos"/>
-        <label for="MetodoPago">Mes de Caducidad</label>
-        <select name="metodo" id="MetodoPago"> 
+        <input type="number" placeholder="Ejemplo: XXXXXXXXXXXXXXXXX" id="NumTarjeta"/><span>No poner "-" solo los números</span><img src="https://mushingpirineus.com/wp-content/uploads/2018/05/tarjetas-credito-logos.png" alt="Logo de Pagos"/>
+        <label for="Mes">Mes de Caducidad</label>
+        <select name="Mes" id="Mes"> 
           <option value="Enero">Enero</option>
           <option value="Febrero">Febrero</option>
           <option value="Marzo">Marzo</option>
@@ -45,11 +45,11 @@
           <option value="Diciembre">Diciembre</option>
         </select>
         <label for="MetodoPago">Año de Caducidad</label>
-        <input type="number" placeholder="Año"/>
+        <input type="number" placeholder="Año" id="Anio"/>
         <label for="MetodoPago">Dirección</label>
-        <input type="text" placeholder="Ejemplo: Cra 86B #56-87"/>
+        <input type="text" placeholder="Ejemplo: Cra 86B #56-87" id="Direccion"/>
         <label for="MetodoPago">Código Postal</label>
-        <input type="number" placeholder="Ejemplo: 3009"/>
+        <input type="number" placeholder="Ejemplo: 3009" id="CodPostal"/>
         <button class="Pagar">Pagar!</button>
         <section class="OtrosMedios">
           <h2>Otros Medios de Pago:</h2>
@@ -57,8 +57,12 @@
         </section>
       </form>
     </main>
+    <section class="ModalPagoExitoso Oculto">
+      <h1>Pago Exitoso!</h1>
+    </section>
     <footer class="footer"><span class="footer__title">Diginotaria 2020</span>
       <div class="socialMedia"><span class="socialMedia__title">Vinculos redes sociales</span></div>
     </footer>
+    <script src="../JS/pagos.js"></script>
   </body>
 </html>
