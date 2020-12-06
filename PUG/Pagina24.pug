@@ -1,0 +1,43 @@
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Home
+        link(rel="stylesheet", href="../css/estilos.css")
+        link(rel="stylesheet", href="../css/Galvis-Estilos.css")
+    body
+        include header.pug
+        include Menu.pug
+
+        main.Contacto
+            h1.Titulo Contáctanos
+
+            h2.Subtitulo Nuestros Desarrolladores
+            p Escríbenos a nuestro correo diginotaria2020@gmail.com. Encuentranos en nuestras redes sociales como @diginotaria.co en Instagram, @DigiNotaria en twitter y Digi notaria en Facebook.
+
+            section.GridIntegrantes
+                div
+                    img(src="../IMG/Avatar Ricardo.jpeg", alt="Ricardo")
+                    h4 Ricardo González
+                    p Programador 
+                    p Diseñador web
+                    p Desarrollador web
+                    p Cel: 320 45785655
+                div
+                    img(src="../IMG/Avatar Jennifer.jpeg", alt="Jennifer")
+                    h4 Jennifer Lotero
+                    p Programador 
+                    p Diseñador web
+                    p Social Manager
+                    p Cel: 313 7568956
+                div
+                    img(src="../IMG/Avatar Alejandro.jpeg", alt="Ricardo")
+                    h4 Alejandro Naranjo
+                    p Programador 
+                    p Community Manager
+                    p Desarrollador Web
+                    p Cel: 314 5628975
+            
+            button.regresar Atras
+
+        include footer.pug

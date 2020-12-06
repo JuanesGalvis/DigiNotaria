@@ -41,7 +41,7 @@ body {
 
     }
 
-    h1.TituloQA, h1.TituloGuia {
+    h1.TituloQA, h1.TituloGuia, h1.Titulo {
         background: #273240 0% 0% no-repeat padding-box;
         border: 1px solid #707070;
         text-align: center;
@@ -270,6 +270,255 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    main.Contacto {
+        h2.Subtitulo {
+            font-size: 25px;
+            text-align: left;
+            margin: 10px 0px 10px 20px;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: left;
+            margin: 10px 0px 10px 20px;
+        }
+
+        section.GridIntegrantes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-left: 20px;
+
+            div {
+                img {
+                width: 300px;
+                }
+            }
+        }
+
+        button.Regresar {
+            background: #273240 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            text-align: center;
+            color: $Color-gris;
+            width: 150;
+            height: 33px;
+            font-size: 20px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    section.MenuEscrituracion {
+        margin: 0 auto;
+        padding: 0;
+        background-color: $Color-azul;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    
+        nav {
+            padding: 20px;
+            border: 3px solid $Color-gris;
+            width: fit-content;
+            margin: 0 auto;
+
+            
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+            
+                li {
+                    text-align: left;
+                    margin: 10px 0px 10px 10px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    font-family: $fuente;
+
+                    a {
+                        color: $Color-gris;
+                    }
+                }
+            }
+        }
+    
+        button.Regresar {
+            background: #273240 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            text-align: center;
+            color: $Color-gris;
+            width: 150;
+            height: 33px;
+            font-size: 20px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    main.RecuperarContrasena {
+
+    width: 70%;
+    margin: 0 auto;
+
+        h1.TituloDiferente {
+            background: $Color-gris 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            text-align: center;
+            color: $Color-azul;
+            width: fit-content;
+            padding: 10px 20px;
+            height: 33px;
+            font-size: 20px;
+            margin: 20px auto 40px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        input {
+            background: $Color-azul-claro 0% 0% no-repeat padding-box;
+            color: $Color-gris;
+            border: 1px solid #707070;
+            padding: 15px 5px;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .botones {
+            width: 60%;
+            margin: 20px auto 36vh auto;
+            display: flex;
+            button.Regresar, button.aceptar{
+                background: #273240 0% 0% no-repeat padding-box;
+                border: 1px solid #707070;
+                text-align: center;
+                color: $Color-gris;
+                width: 150;
+                height: 33px;
+                font-size: 20px;
+                margin: 10px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    main.Pagos {
+    width: 80%;
+    margin: 0 auto;
+
+        h3  {
+            font-size: 20px;
+        }
+
+        input {
+            background: $Color-gris;
+            border: 1px solid #707070;
+            text-align: center;
+            color: $Color-azul;
+            width: fit-content;
+            height: 33px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    }
+
+    main.Pagos {
+        width: 90%;
+        margin: 0 auto;
+
+        h2 { 
+            font-size: 25px;
+            margin: 10px auto 20px 20px;
+        }
+
+        form.VentanaDePago {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-items: center;
+            align-items: center;
+            margin: 10px auto 10px auto;
+            border: 3px solid $Color-gris;
+            padding: 10px;
+            width: 60%;
+
+            img {
+                width: 200px;
+            }
+
+            label {
+                margin: 15px auto;
+            }
+
+            input, select {
+                background-color: $Color-gris-claro;
+                color: $Negro;
+                width: 500px;
+                border-radius: 8px;
+            }
+
+            select {
+                height: 33px;
+                text-align: center;
+            }
+
+            button.Pagar {
+                background: #61b15a;
+                border: 1px solid #273240;
+                text-align: center;
+                color: #273240;
+                width: 150px;
+                border-radius: 5%;
+                height: 33px;
+                font-size: 20px;
+                margin: 10px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+            }
+
+            .FechaCaducidad {
+                display: flex;
+                justify-items: center;
+                justify-content: center;
+
+                select, input {
+                    width: 48%;
+                }
+            }
+        
+            section.OtrosMedios {
+            width: 90%;
+            margin: 10px auto;
+                .LogosOtrosMedios {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    justify-items: center;
+                    align-items: center;
+                    img {
+                        width: 100px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        
         }
     }
 }
