@@ -12,9 +12,11 @@
         .blanco{
             color: $Color-gris;
         }
-        a{
+        span{
             display: inline;
             font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: inherit;
         }
         .celular{
             display: flex;

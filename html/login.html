@@ -12,16 +12,19 @@
       <h3 class="main__title">Inicia Sesión</h3>
       <form class="login">
         <label class="login__label" for="">Correo</label>
-        <input class="login__input" type="text"/>
+        <input class="login__input" type="text" id="EmailInput"/>
         <label class="login__label" for="">Contraseña</label>
-        <input class="login__input" type="password"/><a class="login__link" href="Pagina27.html">¿Olvidaste tu contraseña?</a>
+        <input class="login__input" type="password" id="PasswordInput"/><a class="login__link" href="Pagina27.html">¿Olvidaste tu contraseña?</a>
         <p>¿No tienes cuenta? <a class="login__link" href="registro.html">Regístrate</a></p>
         <p>o <a class="login__link" href="home_guest.html">ingresa como invitado</a></p>
-        <div class="login__buttons"><a class="button" href="perfil.html">Aceptar</a><a class="button" href="home_guest.html">Atrás</a></div>
+        <div class="login__buttons">
+          <button class="button" id="LoginBtn">Iniciar Sesión</button><a class="button" href="./index.html">Atrás</a>
+        </div>
       </form>
     </main>
     <footer class="footer"><span class="footer__title">Diginotaria 2020</span>
-      <div class="socialMedia"><a class="icon" href="https://www.instagram.com/diginotaria.co/?hl=es-la"><img src="../IMG/instagram.svg" alt=""/></a><a class="icon" href="https://twitter.com/DigiNotaria"><img src="../IMG/gorjeo.svg" alt=""/></a><a class="icon" href="https://www.facebook.com/digi.notaria.1"><img src="../IMG/facebook.svg" alt=""/></a></div>
+      <div class="socialMedia"><a class="icon" href="https://www.instagram.com/diginotaria.co/?hl=es-la" target="_blank"><img src="../IMG/instagram.svg" alt=""/></a><a class="icon" href="https://twitter.com/DigiNotaria" target="_blank"><img src="../IMG/gorjeo.svg" alt=""/></a><a class="icon" href="https://www.facebook.com/digi.notaria.1" target="_blank"><img src="../IMG/facebook.svg" alt=""/></a></div>
     </footer>
+    <script src="../JS/login.js"></script>
   </body>
 </html>

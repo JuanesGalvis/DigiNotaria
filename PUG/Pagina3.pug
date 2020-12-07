@@ -35,7 +35,11 @@ html
                 h3 Borrar Cuenta
                 p  Borrar tu cuenta es permanente. Cuando elimines tu cuenta en diginotaria, no podrás recuperar el contenido e información guardada.
 
-            a(href="./settings.html")
-                button.regresar Atras
+            .Botones
+                button.regresar#Eliminar Eliminar Cuenta
+                button.regresar#Desactivar Desactivar Cuenta
+                a(href="./settings.html")
+                    button.regresar Atras
 
         include footer.pug
+        script(src="../JS/Borrar_Cuenta.js")

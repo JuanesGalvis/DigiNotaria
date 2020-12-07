@@ -34,13 +34,14 @@ html
                 .form__box
                     .form__box__field
                         label Contraseña Actual
-                        input(type="text") 
+                        input#Actual(type="text")
                     .form__box__field
                         label Nueva contraseña
-                        input(type="text") 
+                        input#Nueva(type="text")
                     .form__box__field
                         label Re-escribe la nueva contraseña
-                        input(type="text") 
+                        input#Confirmacion(type="text")
                 button.form__button Continuar
             a(href="settings.html").main__button Atrás
         include footer.pug
+        script(src="../JS/Seguridad.js")

@@ -75,3 +75,14 @@
     }
 
 }
+
+a {
+    color: $Color-gris-oscuro;
+    text-decoration: none;
+}
+
+.Error {
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(227,34,34,1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(227,34,34,1);
+    box-shadow: 0px 0px 24px 0px rgba(227,34,34,1);
+}

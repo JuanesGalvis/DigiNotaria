@@ -53,9 +53,11 @@ a {
 .main section .blanco {
   color: #a69f97;
 }
-.main section a {
+.main section span {
   display: inline;
   font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: inherit;
 }
 .main section .celular {
   display: flex;

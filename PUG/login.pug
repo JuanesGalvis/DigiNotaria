@@ -11,16 +11,17 @@ html
             h3.main__title Inicia Sesión
             form.login
                 label(for="").login__label Correo
-                input(type="text").login__input
+                input(type="text").login__input#EmailInput
                 label(for="").login__label Contraseña
-                input(type="password").login__input
+                input(type="password").login__input#PasswordInput
                 a(href="Pagina27.html").login__link ¿Olvidaste tu contraseña?
                 p ¿No tienes cuenta? 
                     a(href="registro.html").login__link Regístrate
                 p o 
                     a(href="home_guest.html").login__link ingresa como invitado
                 .login__buttons
-                    a(href="perfil.html").button Aceptar
-                    a(href="home_guest.html").button Atrás
+                    button.button#LoginBtn Iniciar Sesión
+                    a(href="./index.html").button Atrás
                 
         include footer.pug
+        script(src="../JS/login.js")

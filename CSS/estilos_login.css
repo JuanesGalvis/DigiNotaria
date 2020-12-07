@@ -113,3 +113,12 @@ a {
   font-weight: 500;
   border: 2px solid #73716e;
 }
+
+a {
+  color: #73716e;
+  text-decoration: none;
+}
+
+.Error {
+  box-shadow: 0px 0px 24px 0px #e32222;
+}
