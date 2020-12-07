@@ -58,3 +58,9 @@ FormPago.addEventListener('submit', (event) => {
         setTimeout(() => { FormPago.submit() }, 1000)
     }
 })
+
+const Atras = document.querySelector('#Atras')
+
+Atras.addEventListener('click', () => {
+  history.back();  
+})
