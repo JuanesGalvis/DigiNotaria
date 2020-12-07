@@ -43,6 +43,16 @@ FormPago.addEventListener('submit', (event) => {
         PagoCorrecto = true;
     }
 
+    // AÑO DE CADUCIDAD
+    if (AnioCaducidad.value == "") {
+        AnioCaducidad.classList.add('Error')
+        alert('Año de caducidad vacio')
+        PagoCorrecto = false;
+    }else {
+        AnioCaducidad.classList.remove('Error')
+        PagoCorrecto = true;
+    }
+
     if(PagoCorrecto) {
         ModalConfirmacion.classList.remove('Oculto')
         setTimeout(() => { FormPago.submit() }, 1000)
