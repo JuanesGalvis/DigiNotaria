@@ -8,7 +8,7 @@ CambiarNombre.addEventListener('click', () => {
     let NuevaInfo = prompt("Introduzca su nuevo nombre:", "");
     Nombre.innerHTML = NuevaInfo + ' '
 
-})
+});
 
 // CAMBIAR CELULAR
 const CambiarCelular = document.querySelector('#CambiarCelular');
@@ -18,7 +18,7 @@ CambiarCelular.addEventListener('click', () => {
 
     let NuevaInfo = prompt("Introduzca su nuevo celular:", "");
     Celular.innerHTML = NuevaInfo + ' '
-})
+});
 
 // CAMBIAR TÉLEFONO
 const CambiarTelefono = document.querySelector('#CambiarTelefono');
@@ -28,6 +28,13 @@ CambiarTelefono.addEventListener('click', () => {
 
     let NuevaInfo = prompt("Introduzca su nuevo Telefono:", "");
     Telefono.innerHTML = NuevaInfo + ' '
-})
+});
+
+
+(()=>{
+    Nombre.innerText=localStorage.getItem('nombre');
+    Celular.innerText=localStorage.getItem('celular');
+    Telefono.innerText=localStorage.getItem('telefono');
+})();
 
 

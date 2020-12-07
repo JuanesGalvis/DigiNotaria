@@ -75,3 +75,7 @@ a {
 .main .section3 a {
   display: block;
 }
+
+#nombre {
+  margin-right: 5em;
+}

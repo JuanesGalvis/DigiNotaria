@@ -19,6 +19,25 @@
             text-decoration: none;
             text-align: center;
         }
+        form{
+            width: fit-content;
+            input{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: .5em;
+                width: 12em;
+                height: 2em;
+                border: 2px solid $Color-gris-oscuro ;
+                background-color: $Color-azul;
+                color: $Color-gris-oscuro;
+                text-decoration: none;
+                text-align: center;
+                font-size: 1.2em;
+            }
+        }
+        
+        
     }
 }
 

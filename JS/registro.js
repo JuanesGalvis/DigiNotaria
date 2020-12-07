@@ -14,6 +14,16 @@ const $direccion= document.querySelector('#direccion');
 const $telefono= document.querySelector('#telefono');
 const $celular= document.querySelector('#celular');
 
+const $form= document.querySelector('#form');
+const $nombrePersona= document.querySelector('#nombrePersona');
+
+$form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    $nombrePersona.value = vecParametros[0].split("=")[1];
+    $form.submit();
+    
+})
+
 
 function placeParameters(){
     $nombre.innerText=vecParametros[0].split("=")[1] + " " + vecParametros[1].split("=")[1] + " " + vecParametros[2].split("=")[1];
@@ -28,6 +38,11 @@ function placeParameters(){
     $direccion.innerText=vecParametros[11].split("=")[1].split("+")[0] + " " + vecParametros[11].split("=")[1].split("+")[1] + " " +vecParametros[11].split("=")[1].split("+")[2] ;
     $telefono.innerText=vecParametros[12].split("=")[1];
     $celular.innerText=vecParametros[13].split("=")[1];
+   
+    localStorage.setItem('nombre', $nombre.outerText);
+    localStorage.setItem('celular', $celular.outerText);
+    localStorage.setItem('telefono', $telefono.outerText);
 }
+
 
 placeParameters();

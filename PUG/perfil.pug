@@ -13,6 +13,9 @@ html
             img.header__image(src="../IMG/Logo transparente.png", alt="")
             .header__links
                 a(href="login.html") Cerrar Sesión
+                form(action="home.html", method="get")#form
+                    input(type="submit" value="Ir a la página principal"  id="botonNombrePersona") 
+                    input(type="hidden" name="nombre")#nombrePersona
         include Menu.pug
 
         section.Recorrido
@@ -35,40 +38,40 @@ html
                 h2.info__title Información personal
                 .info__box
                     h4.label Nombre Completo:
-                    h4(id="nombre").input Laura Monsalve Henao
+                    h4(id="nombre").input 
                 .info__box
                     h4.label Tipo documento:
-                    h4(id="tipo").input Cc.
+                    h4(id="tipo").input 
                 .info__box
                     h4.label Número documento:
-                    h4(id="numdoc").input 1001033913
+                    h4(id="numdoc").input 
                 .info__box
                     h4.label Fecha de nacimiento:
-                    h4(id="fecha").input 23/10/2001
+                    h4(id="fecha").input 
                 .info__box
                     h4.label Departamento de nacimiento:
-                    h4(id="deptonac").input Antioquia
+                    h4(id="deptonac").input 
                 .info__box
                     h4.label Municipio de nacimiento:
-                    h4(id="munnac").input Medayork
+                    h4(id="munnac").input 
                 .info__box
                     h4.label Departamento de residencia:
-                    h4(id="deptores").input Antioquia
+                    h4(id="deptores").input 
                 .info__box
                     h4.label Municipio de residencia:
-                    h4(id="munres").input Medellín
+                    h4(id="munres").input 
                 .info__box
                     h4.label Notaria en que registra:
-                    h4(id="notaria").input 22
+                    h4(id="notaria").input 
                 .info__box
                     h4.label Dirección:
-                    h4(id="direccion").input Guarne zango
+                    h4(id="direccion").input 
                 .info__box
                     h4.label Número de teléfono:
-                    h4(id="telefono").input 3455454
+                    h4(id="telefono").input 
                 .info__box
                     h4.label Número de celular:
-                    h4(id="celular").input 3198277839
+                    h4(id="celular").input 
 
         include footer.pug
         script(src="../JS/registro.js")
