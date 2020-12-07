@@ -76,6 +76,10 @@ a {
   border: 1px solid #a69f97;
   font-weight: 200;
   font-size: 2em;
+  cursor: pointer;
+}
+.main .login__button:hover {
+  background-color: #a69f97;
 }
 .main .login__box {
   width: 15em;

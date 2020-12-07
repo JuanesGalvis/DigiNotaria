@@ -85,11 +85,13 @@ section.Menu nav ul li {
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+section.Menu nav ul li a {
+  color: #273240;
+}
 section.Menu button.Regresar, section.Menu button.OcultarMenu {
   background: #273240 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   text-align: center;
-  color: #a69f97;
   width: 150;
   height: 33px;
   font-size: 20px;
@@ -97,4 +99,8 @@ section.Menu button.Regresar, section.Menu button.OcultarMenu {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #a69f97;
+}
+section.Menu button.Regresar a, section.Menu button.OcultarMenu a {
+  color: #a69f97;
 }

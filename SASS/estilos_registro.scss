@@ -30,6 +30,10 @@
             border: 1px solid $Color-gris;
             font-weight: 200;
             font-size: 2em;
+            cursor: pointer;
+        }
+        &__button:hover{
+            background-color: $Color-gris;
         }
         &__box{
             width: 15em;

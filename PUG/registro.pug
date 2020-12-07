@@ -9,7 +9,7 @@ html
     body
         main.main
             form(action="perfil.html", method="GET", id="form").login
-                input(type="submit" value="Registro").login__button
+                input(type="submit" value="Registrarse").login__button
                 .login__box    
                     label(for="").login__label Nombre*
                     input(type="text" name="nombre" id="nombre").login__input
@@ -63,4 +63,6 @@ html
                     label(for="").login__label Confirmar contraseña*
                     input(type="password" name="passwordCon" id="passwordCon").login__input
                 
+
         include footer.pug
+        script(src="../JS/confirmar_contrasena.js")

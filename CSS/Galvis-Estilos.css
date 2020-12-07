@@ -297,6 +297,9 @@ body section.MenuServicios button.Regresar {
   justify-content: center;
   align-items: center;
 }
+body section.MenuServicios button.Regresar a {
+  color: #a69f97;
+}
 body main.Contacto h2.Subtitulo {
   font-size: 25px;
   text-align: left;
