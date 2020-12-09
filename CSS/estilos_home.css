@@ -106,38 +106,18 @@ a {
   font-size: 2em;
   text-decoration: none;
 }
-.main__infoNotaria {
+
+.grid {
   display: grid;
-  grid-template-areas: "fotoNotaria . ." "img1 text img2";
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 2.2em;
   column-gap: 2em;
   justify-items: center;
   align-items: center;
-  margin-bottom: 6em;
-  width: 75em;
+  width: 90vw;
+  margin-bottom: 20px;
 }
-.main__infoNotaria h3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: fotoNotaria;
-}
-.main__infoNotaria img {
-  width: 20em;
-}
-.main__infoNotaria img:nth-of-type(1) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: img1;
-}
-.main__infoNotaria__description {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: text;
-}
-.main__infoNotaria img:nth-of-type(2) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  grid-area: img2;
+
 }
 .main__form {
   display: flex;
@@ -149,7 +129,7 @@ a {
   background-color: #73716e;
 }
 .main__form h5 {
-  color: #273240;
+  color: #a69f97;
   margin-bottom: 1.5em;
 }
 .main__form input {
@@ -160,6 +140,7 @@ a {
   border: 2px solid #a69f97;
   font-size: 1.3em;
   padding-left: 0.5em;
+  color: #a69f97;
 }
 .main__form input:nth-of-type(3) {
   height: 7em;
@@ -174,4 +155,8 @@ a {
   background-color: #273240;
   border: 2px solid #a69f97;
   color: #a69f97;
+}
+
+.Error {
+  box-shadow: 0px 0px 24px 0px #e32222;
 }

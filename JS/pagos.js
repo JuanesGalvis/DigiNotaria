@@ -1,3 +1,22 @@
+
+(function ValidarSesion () {
+    
+    const Bloqueo = document.querySelector('.BloqueoInvitado')
+    const SesionActual = localStorage.getItem('Sesion');
+
+    if (SesionActual == 'Invitado') {
+
+        Bloqueo.removeAttribute('id')
+
+    } else if (SesionActual == 'Cuenta') {
+
+        Bloqueo.setAttribute('id', 'Oculto')
+
+    }
+
+})();
+
+
 const FormPago = document.querySelector('.VentanaDePago');
 
 const NumTarjeta = document.querySelector('#NumTarjeta');
@@ -11,49 +30,52 @@ const ModalConfirmacion = document.querySelector('.ModalPagoExitoso');
 FormPago.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    let PagoCorrecto = false;
+    let TarjetaCorrecto = false;
+    let AnioCorrecto = false;
+    let DireccCorrecto = false;
+    let PostalCorrecto = false;
     
     // TARJETA DE CREDITO
     if(NumTarjeta.value != 0 && NumTarjeta.value > 11111111111111111 && NumTarjeta.value < 99999999999999999) {
         NumTarjeta.classList.remove('Error')
-        PagoCorrecto = true;
+        TarjetaCorrecto = true;
     }else {
         NumTarjeta.classList.add('Error')
         alert('Numero de Tarjeta de Credito erroneo o incompleto')
-        PagoCorrecto = false;
+        TarjetaCorrecto = false;
     }
 
     // DIRRECCION
     if (Direccion.value == "") {
         Direccion.classList.add('Error')
         alert('Dirección vacia')
-        PagoCorrecto = false;
+        DireccCorrecto = false;
     }else {
         Direccion.classList.remove('Error')
-        PagoCorrecto = true;
+        DireccCorrecto = true;
     }
 
     // CÓDIGO POSTAL
     if (CodPostal.value == "") {
         CodPostal.classList.add('Error')
         alert('Codigo Postal vacio')
-        PagoCorrecto = false;
+        PostalCorrecto = false;
     }else {
         CodPostal.classList.remove('Error')
-        PagoCorrecto = true;
+        PostalCorrecto = true;
     }
 
     // AÑO DE CADUCIDAD
     if (AnioCaducidad.value == "") {
         AnioCaducidad.classList.add('Error')
         alert('Año de caducidad vacio')
-        PagoCorrecto = false;
+        AnioCorrecto = false;
     }else {
         AnioCaducidad.classList.remove('Error')
-        PagoCorrecto = true;
+        AnioCorrecto = true;
     }
 
-    if(PagoCorrecto) {
+    if(TarjetaCorrecto && DireccCorrecto && PostalCorrecto && AnioCorrecto) {
         ModalConfirmacion.classList.remove('Oculto')
         setTimeout(() => { FormPago.submit() }, 1000)
     }

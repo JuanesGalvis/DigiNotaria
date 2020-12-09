@@ -26,3 +26,12 @@ form_login.addEventListener('submit', (event) => {
         InputPassw.value = "";
     }
 })
+
+const Link_Invitado = document.querySelector('#Invitado')
+
+Link_Invitado.addEventListener('click', () => {
+
+    localStorage.setItem('Sesion', 'Invitado')
+    window.location = '../html/home_guest.html'
+
+})

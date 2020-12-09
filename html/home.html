@@ -1,7 +1,7 @@
 
 <html>
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8"/><link rel="shortcut icon" href="../IMG/favicon.PNG" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Home</title>
     <link rel="stylesheet" href="../css/estilos.css"/>
@@ -27,17 +27,25 @@
     <main class="main">
       <h2 class="main__title">Notaría ##</h2>
       <h4>Estamos en un proceso de digitalización y automatización de las notarias de Colombia... estamos cada vez mas cerca de ti y desde la comodidad de tu hogar.</h4><a class="main__button" href="Pagina5.html">Cómo usar el aplicativo Web</a>
-      <div class="main__infoNotaria">
-        <h3>Foto notaría</h3><img src="../IMG/fachada.png" alt=""/>
-        <div class="main__infoNotaria__description">
-          <h4>DIRECCIÓN <br> Centro comercial Monterrey <br> Carrera 48 (Av Las Vegas) No. 10-107 - El Poblado <br> Medellín - Antioquia - Colombia</h4>
-        </div><img src="../IMG/mapa.PNG" alt=""/>
+      <div class="grid">
+        <div>
+          <h3>Foto notaria</h3>
+          <img src="../IMG/fachada.png" alt=""/>
+        </div>
+        <div class="main__infoNotaria">
+          <div class="main__infoNotaria__description">
+            <h4>DIRECCIÓN <br><br> Calle 30A #25-56 <br> Medellín, Poblado</h4>
+          </div>
+        </div>
+        <div class="main__infoNotaria">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.5561280687402!2d-75.59832068981582!3d6.231886117302644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44299591b28229%3A0xe7b950e91869ea8c!2sCalle%2030A%20%23%2378-25%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1607474624649!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       </div>
-      <form class="main__form" action="">
+      <form class="main__form" id="FormHome">
         <h5>ESCRIBENOS UN BREVE MENSAJE CON TUS QUEJAS, DUDAS, RECLAMOS O FELICITACIONES</h5>
-        <input type="text" placeholder="Nombre Completo"/>
-        <input type="text" placeholder="Correo"/>
-        <input type="text" placeholder="Mensaje"/>
+        <input type="text" placeholder="Nombre Completo" id="NombreCompleto"/>
+        <input type="text" placeholder="Correo" id="Correo"/>
+        <input type="text" placeholder="Mensaje" id="Mensaje"/>
         <button>Enviar</button>
       </form>
     </main>
